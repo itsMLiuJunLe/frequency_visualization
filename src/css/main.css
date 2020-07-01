@@ -1,0 +1,178 @@
+@import '~antd/dist/antd.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+  height: 100% !important;
+}
+
+
+
+a,
+a:hover {
+    text-decoration: none;
+}
+/* header部分 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+header ul li,
+header .submenu-title-wrapper {
+    font-size: 1rem;
+    line-height: 64px;
+}
+header .ant-menu {
+    padding: 0 3rem;
+    flex-grow: 1;
+}
+header .brand {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.75);
+}
+header .brand:hover {
+    color: rgba(255, 255, 255, 1);
+}
+header .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+}
+header .logo img {
+    margin-right: 1rem;
+}
+/* aside部分 */
+aside .ant-layout-sider-children {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #ffffff;
+    height: 100%;
+    overflow: scroll;
+}
+aside .brand {
+    font-size: 1.25rem;
+    margin:  2rem 2rem;
+    color: rgba(255, 255, 255, 0.75);
+}
+aside .brand:hover {
+    color: rgba(255, 255, 255, 1);
+}
+aside .ant-menu {
+    flex-grow: 1;
+}
+aside .logo {
+    margin: 2rem 0 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* 导航栏其他 */
+aside .ant-switch ,
+header .ant-switch {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+aside .ant-switch-checked,
+header .ant-switch-checked {
+    background-color: #00896c;
+}
+.ant-menu-selected-item a::before {
+    background-color: #fff;
+}
+
+.ant-btn {
+  height: 4%;
+}
+
+.switch-btn {
+  left: 24%;
+  width: 50%;
+}
+
+/* 消息栏 */
+.log-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0;
+}
+/* main部分 */
+.ant-layout-has-sider {
+  height: 100%;
+}
+
+.ant-layout-has-sider > .ant-layout-content {
+    overflow-x: initial!important;
+}
+main {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.map-icon {
+    position: absolute;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 50%;
+}
+/* 全域信息 */
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+.wrap-grid,
+.wrap-grid div {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+.wrap-grid>div {
+    display: flex;
+    flex-direction: row;
+}
+.single-grid {
+    border-color: #ffffff;
+    border-style: solid;
+    border-width: 0;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.single-grid:hover {
+    background-color: transparent;
+}
+/* 通用 */
+.relative_visualArea {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 96%;
+}
+
+.relative_map {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.trace_viusal_area {
+  position: fixed;
+  width: 650px;
+  z-index: 100;
+  bottom: 5%;
+  right: 5%;
+}

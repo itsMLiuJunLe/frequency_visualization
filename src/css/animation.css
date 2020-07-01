@@ -1,0 +1,24 @@
+.code-box-shape {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    width: 18px;
+    height: 6px;
+    border-radius: 3px;
+    transform: translate(-9px, -3px);
+}
+.color-0 {
+  background-color: #ed784a;
+}
+.color-1 {
+  background-color: #86c166;
+}
+.color-2 {
+  background-color: #3a8fb7;
+}
+.color-3 {
+  background-color: #9b90c2;
+}

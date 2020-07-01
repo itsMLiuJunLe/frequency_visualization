@@ -1,0 +1,206 @@
+.chart-card {
+  position: absolute;
+}
+.chart-card a {
+  color: inherit;
+}
+.chart-card .ant-card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.chart-card .ant-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+/*
+ * 4种位置: 左侧居中、右侧居中、左侧靠上、左侧靠下
+ */
+.pos-left-center {
+  left: 4%;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 44%;
+  height: 80%;
+}
+.pos-right-center {
+  left: 52%;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 44%;
+  height: 80%;
+}
+.pos-left-top {
+  left: 4%;
+  top: 5%;
+  width: 44%;
+  height: 44%;
+}
+.pos-left-bottom {
+  left: 4%;
+  top: 53%;
+  width: 44%;
+  height: 44%;
+}
+/* Card标题 */
+.chart-card .ant-card-head-wrapper {
+  height: 100%;
+}
+.chart-card .ant-card-head-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ant-card-head-title .btn-title button {
+  background-color: transparent;
+  border: none;
+  outline:none;
+  width: 1.375rem;
+  height: 1.375rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  border-radius: 50%;
+}
+.btn-title button:hover {
+  color: #ffffff;
+}
+.btn-title .btn-zoom-in:hover {
+  background-color: rgb(255, 96, 88);
+}
+.btn-title .btn-zoom-out:hover {
+  background-color: rgb(255, 190, 60);
+}
+.btn-title .btn-download:hover {
+  background-color: rgb(28, 205, 77);
+}
+/* 放大缩小及动画 */
+.normal-to-max {
+  animation: to-max 1 500ms forwards;
+}
+.max-to-normal {
+  animation: max-to 1 500ms forwards;
+}
+.normal-to-min-1 {
+  animation: to-min-1 1 500ms forwards;
+}
+.min-to-normal-1 {
+  animation: min-to-1 1 500ms forwards;
+}
+.normal-to-min-2 {
+  animation: to-min-2 1 500ms forwards;
+}
+.min-to-normal-2 {
+  animation: min-to-2 1 500ms forwards;
+}
+.normal-to-min-3 {
+  animation: to-min-3 1 500ms forwards;
+}
+.min-to-normal-3 {
+  animation: min-to-3 1 500ms forwards;
+}
+@keyframes to-max {
+  0% {
+    z-index: 1;
+  }
+  100% {
+    top: 50%;
+    left: 50%;
+    width: 94%;
+    height: 90%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+}
+@keyframes max-to {
+  0% {
+    top: 50%;
+    left: 50%;
+    width: 94%;
+    height: 90%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  99% {
+    z-index: 1;
+  }
+  100% {
+    z-index: 0;
+  }
+}
+@keyframes to-min-1 {
+  0% {
+    max-height: 800px;
+  }
+  100% {
+    top: 1%;
+    left: 1%;
+    width: 32%;
+    max-height: 49px;
+    transform: translate(0, 0);
+  }
+}
+@keyframes min-to-1 {
+  0% {
+    top: 1%;
+    left: 1%;
+    width: 32%;
+    max-height: 49px;
+    transform: translate(0, 0);
+  }
+  100% {
+    max-height: 800px;
+  }
+}
+@keyframes to-min-2 {
+  0% {
+    max-height: 800px;
+  }
+  100% {
+    top: 1%;
+    left: 34%;
+    width: 32%;
+    max-height: 49px;
+    transform: translate(0, 0);
+  }
+}
+@keyframes min-to-2 {
+  0% {
+    top: 1%;
+    left: 34%;
+    width: 32%;
+    max-height: 49px;
+    transform: translate(0, 0);
+  }
+  100% {
+    max-height: 800px;
+  }
+}
+@keyframes to-min-3 {
+  0% {
+    max-height: 800px;
+  }
+  100% {
+    top: 1%;
+    left: 67%;
+    width: 32%;
+    max-height: 49px;
+    transform: translate(0, 0);
+  }
+}
+@keyframes min-to-3 {
+  0% {
+    top: 1%;
+    left: 67%;
+    width: 32%;
+    max-height: 49px;
+    transform: translate(0, 0);
+  }
+  100% {
+    max-height: 800px;
+  }
+}

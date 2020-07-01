@@ -1,0 +1,342 @@
+@keyframes warn {
+    0% {
+        transform: scale(0);
+        opacity: 0.5;
+    }
+    25% {
+        transform: scale(0.5);
+        opacity: 0.3;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 0.2;
+    }
+    75% {
+        transform: scale(1.2);
+        opacity: 0.1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+} 
+
+@-webkit-keyframes warn {
+    0% {
+        transform: scale(0);
+        opacity: 0.5;
+    }
+    25% {
+        transform: scale(0.5);
+        opacity: 0.3;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 0.2;
+    }
+    75% {
+        transform: scale(1.2);
+        opacity: 0.1;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+@keyframes communication {
+    0% {
+        transform: scale(0);
+        opacity: 0.5;
+    }
+    25% {
+        transform: scale(0.8);
+        opacity: 0.3;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 0.2;
+    }
+    75% {
+        transform: scale(1.5);
+        opacity: 0.1;
+    }
+    100% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+} 
+@-webkit-keyframes communication {
+    0% {
+        transform: scale(0);
+        opacity: 0.5;
+    }
+    25% {
+        transform: scale(0.8);
+        opacity: 0.3;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 0.2;
+    }
+    75% {
+        transform: scale(1.5);
+        opacity: 0.1;
+    }
+    100% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+
+/* 通信 */
+.red_communication {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: -200%;
+    top: -180%;
+    border: 60px solid red;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    opacity: 0;
+    -webkit-animation: communication 3s ease-out;
+    -moz-animation: communication 3s ease-out;
+    animation: communication 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+.blue_communication {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: -200%;
+    top: -180%;
+    border: 60px solid blue;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    opacity: 0;
+    -webkit-animation: communication 3s ease-out;
+    -moz-animation: communication 3s ease-out;
+    animation: communication 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+/* 导航 */
+.red_navigation {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: -200%;
+    top: -180%;
+    border: 60px solid red;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    opacity: 0;
+    -webkit-animation: warn 15s ease-out;
+    -moz-animation: warn 15s ease-out;
+    animation: warn 15s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+.blue_navigation {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: -200%;
+    top: -180%;
+    border: 60px solid blue;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    opacity: 0;
+    -webkit-animation: warn 15s ease-out;
+    -moz-animation: warn 15s ease-out;
+    animation: warn 15s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+/* 遥控 */
+.red_telecontrol {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: -200%;
+    top: -180%;
+    border: 60px solid red;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    opacity: 0;
+    -webkit-animation: warn 5s ease-out;
+    -moz-animation: warn 5s ease-out;
+    animation: warn 5s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+.blue_telecontrol {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: -200%;
+    top: -180%;
+    border: 60px solid blue;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    opacity: 0;
+    -webkit-animation: warn 5s ease-out;
+    -moz-animation: warn 5s ease-out;
+    animation: warn 5s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+/* 干扰 */
+.red_interfere {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: -200%;
+    top: -180%;
+    border: 60px solid red;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    opacity: 0;
+    -webkit-animation: warn 9s ease-out;
+    -moz-animation: warn 9s ease-out;
+    animation: warn 9s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+.blue_interfere {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: -200%;
+    top: -180%;
+    border: 60px solid blue;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    opacity: 0;
+    -webkit-animation: warn 9s ease-out;
+    -moz-animation: warn 9s ease-out;
+    animation: warn 9s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+.nav1 {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border: 1px solid#87CEFA;
+    border-radius: 100px;
+    left: calc(17% - 78px);
+    top: calc(36% - 78px);
+}
+
+.nav2 {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border: 1px solid#F08080;
+    border-radius: 100px;
+    left: calc(23% - 78px);
+    top: calc(36% - 78px);
+}
+
+.int1 {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border: 1px solid#87CEFA;
+    border-radius: 100px;
+    left: calc(51% - 78px);
+    top: calc(85% - 78px);
+}
+
+.int2 {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border: 1px solid#F08080;
+    border-radius: 100px;
+    left: calc(54% - 78px);
+    top: calc(85% - 78px);
+}
+
+.int3 {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border: 1px solid#F08080;
+    border-radius: 100px;
+    left: calc(38% - 78px);
+    top: calc(42% - 78px);
+}
+
+.int4 {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border: 1px solid#87CEFA;
+    border-radius: 100px;
+    left: calc(34% - 78px);
+    top: calc(30% - 78px);
+}
+
+.tel1 {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border: 1px solid#F08080;
+    border-radius: 100px;
+    left: calc(58% - 78px);
+    top: calc(32% - 78px);
+}
+
+.tel2 {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border: 1px solid#87CEFA;
+    border-radius: 100px;
+    left: calc(66% - 78px);
+    top: calc(32% - 78px);
+}
+
+.com1 {
+    position: absolute;
+    width: 216px;
+    height: 216px;
+    border: 1px solid#F08080;
+    border-radius: 100px;
+    left: calc(66% - 96px);
+    top: calc(92% - 96px);
+}
+
+.com2 {
+    position: absolute;
+    width: 216px;
+    height: 216px;
+    border: 1px solid#87CEFA;
+    border-radius: 100px;
+    left: calc(70% - 96px);
+    top: calc(84% - 96px);
+}
