@@ -1,1 +1,1 @@
-# fquency_visualization
+# frequency_visualization
